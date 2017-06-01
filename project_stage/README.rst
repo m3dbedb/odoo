@@ -9,7 +9,7 @@ Project Stage
 Create module project stage and add it on project header form and project search.
 This is a port of https://github.com/ingadhoc/project/tree/9.0/project_stage
 To make it fully work we need to replase last line of file security/ir.model.access.csv to meet with odoo 10 external ids. Currently Odoo 10 say it doesn't recornize base.group_sale_salesman I suppose it was renamed in odoo 10. If you know it's new name please tell.
-To install the module currently you neet to delete last line of file security/ir.model.access.csv
+To install the module currently you need to delete last line of file security/ir.model.access.csv
 
 Configuration
 =============
