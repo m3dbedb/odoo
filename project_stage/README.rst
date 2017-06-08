@@ -6,10 +6,9 @@
 Project Stage
 =============
 
-Create module project stage and add it on project header form and project search.
+Create module project stage in kanban view and add it on project header form and project search.
 This is a port of https://github.com/ingadhoc/project/tree/9.0/project_stage
-To make it fully work we need to replase last line of file security/ir.model.access.csv to meet with odoo 10 external ids. Currently Odoo 10 say it doesn't recornize base.group_sale_salesman I suppose it was renamed in odoo 10. If you know it's new name please tell.
-To install the module currently you need to delete last line of file security/ir.model.access.csv
+Currently the module is missing header to edit current stage in project form view like task have.
 
 Configuration
 =============
@@ -34,4 +33,7 @@ Bugs are tracked on `GitHub Issues
 check there if your issue has already been reported. If you spotted it first,
 help us smashing it by providing a detailed and welcomed feedback.
 
-
+Known issues
+============
+If stage was created from Project>settings>stages menu it may not work properly, 
+to make it work create stages from projects dashboard (kanban view)
