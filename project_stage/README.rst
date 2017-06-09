@@ -8,13 +8,14 @@ Project Stage
 
 Create module project stage in kanban view and add it on project header form and project search.
 This is a port of https://github.com/ingadhoc/project/tree/9.0/project_stage
-Currently the module is missing header to edit current stage in project form view like task have.
 
 Configuration
 =============
 
 To configure this module, you need to:
-add stages in project kanban view
+Open projects dashboard (kanban veiew)
+add stages in project kanban view.
+Group projects by stage. Add stages here
 
 Usage
 =====
@@ -22,7 +23,7 @@ Usage
 To use this module, you need to:
 
 
-.. branch is "10.0" for example
+It works like stages in tasks
 
 
 Bug Tracker
