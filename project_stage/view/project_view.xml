@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<openerp>
-    <data>
+<odoo>
        <record id="project_form" model="ir.ui.view">
             <field name="name">project_stage.form.inherit</field>
             <field name="model">project.project</field>
             <field name="inherit_id" ref="project.edit_project"/>
             <field name="arch" type="xml">
-                <header position="after">
+                <xpath expr="/form/*" position="before">
                     <header>
                         <field name="stage_id" widget="statusbar" clickable="True" options="{'fold_field': 'fold'}"/>
                     </header>
-                </header>
+                </xpath>
             </field>
         </record>
 
@@ -63,5 +62,4 @@
                 </form>
             </field>
         </record>
-    </data>
-</openerp>
+    </odoo>
