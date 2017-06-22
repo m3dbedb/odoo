@@ -32,13 +32,13 @@
             <field name="model">project.project</field>
             <field name="inherit_id" ref="project.view_project_kanban"/>
             <field name="arch" type="xml">
-                <kanban class="oe_background_grey o_kanban_dashboard o_project_kanban">
+                <field name="name" position="after">
                     <field name="stage_id"/>
                     <field name="sequence"/>
-                </kanban>
-                <kanban class="oe_background_grey o_kanban_dashboard o_project_kanban" position="attributes">
+                </field>
+		  <xpath expr="//kanban[contains(@class, 'oe_background_grey o_kanban_dashboard o_project_kanban')]" position="attributes">
                     <attribute name="default_group_by">stage_id</attribute>
-                </kanban>
+                </xpath>
             </field>
         </record>
 
